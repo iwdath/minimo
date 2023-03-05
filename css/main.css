@@ -5,6 +5,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: #fff;
 }
@@ -52,6 +55,58 @@ a {
 .li1, .li2, .li3 {
   margin-right: 120px;
 }
+.posts-wrapper {
+  padding: 100px 78px 120px;
+}
+.photodiary {
+  color: #626262;
+  margin-bottom: 130px;
+}
+.photodiary h3, .card h3 {
+  font-family: 'Ubuntu', sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  color: #b4ad9e;
+  margin-bottom: 28px;
+}
+.photodiary h1, .card h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+.photodiary p, .card p {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.7em;
+  margin-bottom: 50px;
+}
+.photodiary .comment {
+  display: inline;
+  cursor: pointer;
+}
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  width: 100%;
+  color: #626262;
+}
+.card1 {
+  margin-right: 68px;
+}
+.card img {
+  margin-bottom: 28px;
+}
+.card p {
+  margin-bottom: 0;
+}
+#lifestyle {
+  margin-bottom: 130px;
+}
 @media screen and (max-width: 1400px) {
   .container {
     width: 1062px;
@@ -60,6 +115,9 @@ a {
 @media screen and (max-width: 1200px) {
   .container {
     width: 960px;
+  }
+  .card1 {
+    margin-right: 30px;
   }
 }
 @media screen and (max-width: 992px) {
@@ -77,8 +135,18 @@ a {
   .logo {
     font-size: 25px;
   }
+  .photodiary h1, .card h1 {
+    font-size: 25px;
+  }
   .li1, .li2, .li3 {
     margin-right: 50px;
+  }
+  .card1 {
+    margin-right: 0;
+    margin-bottom: 65px;
+  }
+  .content {
+    flex-direction: column;
   }
 }
 @media screen and (max-width: 576px) {
@@ -88,6 +156,9 @@ a {
   .li1, .li2, .li3 {
     margin-right: 25px;
   }
+  .posts-wrapper {
+    padding: 100px 30px 120px;
+  }
 }
 @media screen and (max-width: 490px) {
   .menu-wrapper {
@@ -96,6 +167,9 @@ a {
   }
   .li2 {
     margin-right: 0;
+  }
+  .posts-wrapper {
+    padding: 100px 0 120px;
   }
 }
 @media screen and (max-width: 325px) {
