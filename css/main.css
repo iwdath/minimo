@@ -70,7 +70,7 @@ a {
   color: #b4ad9e;
   margin-bottom: 28px;
 }
-.photodiary h1, .card h1, .email-wrapper h1 {
+.photodiary h2, .card h2, .email-wrapper h2 {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
   font-weight: 400;
@@ -116,7 +116,7 @@ a {
   align-items: center;
   padding: 72px 0;
 }
-.email-wrapper h1 {
+.email-wrapper h2 {
   margin-bottom: 80px;
   color: #333;
   text-align: center;
@@ -214,7 +214,7 @@ input:focus {
   .logo {
     font-size: 25px;
   }
-  .photodiary h1, .card h1, .email-wrapper h1 {
+  .photodiary h2, .card h2, .email-wrapper h2 {
     font-size: 25px;
   }
   .li1, .li2, .li3 {
