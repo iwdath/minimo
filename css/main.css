@@ -1,30 +1,39 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
 html {
   scroll-behavior: smooth;
 }
+
 body {
   background: #fff;
 }
+
 img {
   display: block;
   width: 100%;
 }
+
 li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
 }
+
 .container {
   width: 1062px;
   margin: 0 auto;
 }
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -32,6 +41,7 @@ a {
   margin: 70px 0;
   text-transform: uppercase;
 }
+
 .logo {
   font-family: 'Inconsolata', monospace;
   font-size: 30px;
@@ -39,9 +49,11 @@ a {
   font-weight: 400;
   color: #000;
 }
+
 .menu-wrapper {
   display: flex;
 }
+
 .menu-list {
   display: flex;
   align-items: center;
@@ -49,20 +61,28 @@ a {
   font-size: 14px;
   font-weight: 400;
 }
+
 .menu-btn {
   color: #626262;
 }
-.li1, .li2, .li3 {
+
+.li1,
+.li2,
+.li3 {
   margin-right: 120px;
 }
+
 .posts-wrapper {
   padding: 100px 78px 120px;
 }
+
 .photodiary {
   color: #626262;
   margin-bottom: 130px;
 }
-.photodiary h3, .card h3 {
+
+.photodiary h3,
+.card h3 {
   font-family: 'Ubuntu', sans-serif;
   text-transform: uppercase;
   font-size: 14px;
@@ -70,65 +90,84 @@ a {
   color: #b4ad9e;
   margin-bottom: 28px;
 }
-.photodiary h2, .card h2, .email-wrapper h2 {
+
+.photodiary h2,
+.card h2,
+.email-wrapper h2 {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 38px;
 }
-.photodiary p, .card p {
+
+.photodiary p,
+.card p {
   font-family: 'Playfair Display', serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 1.7em;
   margin-bottom: 50px;
 }
+
 .photodiary .comment {
   display: inline;
   cursor: pointer;
 }
+
 .content {
   display: flex;
   justify-content: space-between;
 }
+
 .card {
   width: 100%;
   color: #626262;
 }
+
 .card1 {
   margin-right: 68px;
 }
+
 .card img {
   margin-bottom: 28px;
 }
+
 .card p {
   margin-bottom: 0;
 }
+
 #lifestyle {
   margin-bottom: 130px;
 }
+
 .email {
   background: #f0f0f0;
 }
+
 .email-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 72px 0;
 }
+
 .email-wrapper h2 {
   margin-bottom: 80px;
   color: #333;
   text-align: center;
 }
+
 .form {
   display: flex;
   border-bottom: #000 solid 1px;
 }
-.form input, .form button {
+
+.form input,
+.form button {
   border: none;
   background: none;
 }
+
 .form input {
   font-family: 'Playfair Display', serif;
   font-size: 14px;
@@ -136,19 +175,24 @@ a {
   padding: 8px 196px 8px 4px;
   color: #626262;
 }
+
 input:focus {
   outline: none;
 }
+
 .btn {
   cursor: pointer;
 }
+
 .second-posts-wrapper {
   padding: 100px 78px 90px;
 }
+
 .load-btn-wrapper {
   display: flex;
   justify-content: center;
 }
+
 .load-btn {
   font-family: 'Playfair Display', serif;
   font-size: 20px;
@@ -158,121 +202,168 @@ input:focus {
   border: solid 1px #626262;
   margin-top: 160px;
 }
+
 .footer {
   background: #f0f0f0;
 }
+
 .footer-wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 40px 0;
 }
-.privacy, .social {
+
+.privacy,
+.social {
   display: flex;
   align-items: center;
 }
-.privacy h3, .social h3 {
+
+.privacy h3,
+.social h3 {
   font-family: 'Playfair Display', serif;
   font-size: 14px;
   font-weight: 400;
   color: #000;
 }
-.terms, .facebook, .twitter {
+
+.terms,
+.facebook,
+.twitter {
   margin-right: 17px;
 }
+
 .social h3 {
   margin-right: 22px;
 }
-.privacy h3, .social h3, .social img {
+
+.privacy h3,
+.social h3,
+.social img {
   cursor: pointer;
 }
+
 @media screen and (max-width: 1400px) {
   .container {
     width: 1062px;
   }
 }
+
 @media screen and (max-width: 1200px) {
   .container {
     width: 960px;
   }
+
   .card1 {
     margin-right: 30px;
   }
 }
+
 @media screen and (max-width: 992px) {
   .container {
     width: 720px;
   }
-  .li1, .li2, .li3 {
+
+  .li1,
+  .li2,
+  .li3 {
     margin-right: 80px;
   }
 }
+
 @media screen and (max-width: 768px) {
   .container {
     width: 540px;
   }
+
   .logo {
     font-size: 25px;
   }
-  .photodiary h2, .card h2, .email-wrapper h2 {
+
+  .photodiary h2,
+  .card h2,
+  .email-wrapper h2 {
     font-size: 25px;
   }
-  .li1, .li2, .li3 {
+
+  .li1,
+  .li2,
+  .li3 {
     margin-right: 50px;
   }
+
   .card1 {
     margin-right: 0;
     margin-bottom: 65px;
   }
+
   .content {
     flex-direction: column;
   }
 }
+
 @media screen and (max-width: 576px) {
   .container {
     width: 90%;
   }
-  .li1, .li2, .li3 {
+
+  .li1,
+  .li2,
+  .li3 {
     margin-right: 25px;
   }
+
   .posts-wrapper {
     padding: 100px 30px 120px;
   }
+
   .second-posts-wrapper {
     padding: 100px 30px 90px;
   }
 }
+
 @media screen and (max-width: 490px) {
   .menu-wrapper {
     flex-direction: column;
     align-items: center;
   }
+
   .li2 {
     margin-right: 0;
   }
+
   .posts-wrapper {
     padding: 100px 0 120px;
   }
+
   .second-posts-wrapper {
     padding: 100px 0 90px;
   }
+
   .form input {
     padding-right: 90px;
   }
+
   .footer-wrapper {
     flex-direction: column;
   }
+
   .social {
     margin-top: 10px;
   }
 }
+
 @media screen and (max-width: 325px) {
   .menu-list {
     flex-direction: column;
   }
-  .li1, .li3 {
+
+  .li1,
+  .li3 {
     margin-right: 0;
   }
+
   .form input {
     padding-right: 35px;
   }
