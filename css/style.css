@@ -1,11 +1,10 @@
 *,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+*::before,
+*::after {
   margin: 0;
   padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -30,36 +29,48 @@ a {
 }
 
 .container {
-  width: 1062px;
   margin: 0 auto;
+  width: 1062px;
 }
 
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin: 70px 0;
   text-transform: uppercase;
 }
 
 .logo {
-  font-family: 'Inconsolata', monospace;
+  font-family: Inconsolata, monospace;
+  font-weight: 400;
   font-size: 30px;
   letter-spacing: 0.2em;
-  font-weight: 400;
   color: #000;
 }
 
 .menu-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
 }
 
 .menu-btn {
@@ -77,36 +88,36 @@ a {
 }
 
 .photodiary {
-  color: #626262;
   margin-bottom: 130px;
+  color: #626262;
 }
 
 .photodiary h3,
 .card h3 {
-  font-family: 'Ubuntu', sans-serif;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 300;
-  color: #b4ad9e;
   margin-bottom: 28px;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #b4ad9e;
 }
 
 .photodiary h2,
 .card h2,
 .email-wrapper h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  font-weight: 400;
   margin-bottom: 38px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 30px;
 }
 
 .photodiary p,
 .card p {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 1.7em;
   margin-bottom: 50px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7em;
 }
 
 .photodiary .comment {
@@ -115,7 +126,11 @@ a {
 }
 
 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
@@ -145,19 +160,28 @@ a {
 }
 
 .email-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 72px 0;
 }
 
 .email-wrapper h2 {
   margin-bottom: 80px;
-  color: #333;
   text-align: center;
+  color: #333;
 }
 
 .form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: #000 solid 1px;
 }
@@ -169,10 +193,10 @@ a {
 }
 
 .form input {
-  font-family: 'Playfair Display', serif;
-  font-size: 14px;
-  font-weight: 400;
   padding: 8px 196px 8px 4px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 14px;
   color: #626262;
 }
 
@@ -189,18 +213,22 @@ input:focus {
 }
 
 .load-btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
 }
 
 .load-btn {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 400;
-  color: #626262;
-  padding: 18px 34px;
-  border: solid 1px #626262;
   margin-top: 160px;
+  border: solid 1px #626262;
+  padding: 18px 34px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #626262;
 }
 
 .footer {
@@ -208,23 +236,33 @@ input:focus {
 }
 
 .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding: 40px 0;
 }
 
 .privacy,
 .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
 }
 
 .privacy h3,
 .social h3 {
   font-family: 'Playfair Display', serif;
-  font-size: 14px;
   font-weight: 400;
+  font-size: 14px;
   color: #000;
 }
 
@@ -299,6 +337,9 @@ input:focus {
   }
 
   .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 }
@@ -325,7 +366,12 @@ input:focus {
 
 @media screen and (max-width: 490px) {
   .menu-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
   }
 
@@ -346,6 +392,9 @@ input:focus {
   }
 
   .footer-wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
@@ -356,6 +405,9 @@ input:focus {
 
 @media screen and (max-width: 325px) {
   .menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
   }
 
