@@ -1,4 +1,3 @@
-# minimo (third practice)
+# Minimo: My third web-practice.
 
-## Design Author:
-### https://www.behance.net/chiaracanderan
+**Design Author**: https://www.behance.net/chiaracanderan
